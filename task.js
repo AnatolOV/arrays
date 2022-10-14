@@ -6,23 +6,6 @@ function compareArrays(arr1, arr2) {
   return result; // boolean
 }
 
-//Задание 1 Вариант решения №2
-function compareArrays(arr1, arr2) {
-  let result;
-  for (let i = 0; i < (arr1.length + arr2.length); i++) {
-    let a = arr1[i];
-    let b = arr2[i];
-    if (arr1.every((elem) => a != b)) {
-      result = false;
-      return result;
-    } else {
-      result = true;
-    }
-  }
-  return result; // boolean
-}
-console.log(compareArrays(arr1, arr2));
-
 //Задание 2
 function advancedFilter(arr) {
   let resultArr;
