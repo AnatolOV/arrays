@@ -45,10 +45,8 @@ console.log(compareArrays(arr1, arr2));
 function advancedFilter(arr) {
   let resultArr;
 
-  // Ваш код
-  positiveNumber = arr.filter(number => number > 0);
-  numberThree = positiveNumber.filter(a => a % 3 === 0);
-  resultArr = numberThree.map(a => a * 10);
+  resultArr = arr.filter(number => number > 0).filter(a => a % 3 === 0).map(a => a * 10);
 
   return resultArr; // array
 }
+
